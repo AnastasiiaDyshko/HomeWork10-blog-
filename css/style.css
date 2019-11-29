@@ -3,33 +3,50 @@
 }
 .header{
     background-image: url("../img/img.png");
-    height: 1000px;
+    min-height: 1000px;
     padding-top: 20px;
     width: 100%;
+    position: relative;
+    padding-bottom: 20px;
 }
- .header__nav-menu .header__logo-text{
+.header__nav{
+    width: 100%;
+    position: fixed;
+}
+.header__nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: center;
+}
+ .header__logo-text{
     font-family: "Pacifico";
-    font-size: 35px;
+    font-size: 50px;
     text-align: left;
-    margin-right: 440px;
-    margin-left: 60px;
+    margin-right: 400px;
+    margin-left: 70px;
     color: #262626;
     cursor: default;
     padding: 0;
 }
-.header__nav-menu{
+.header__nav-menu--style{
     list-style: none;
     float: right;
     width: 100%;
     text-align: right;
     padding: 0;
-    position: fixed;
 }
-.header__nav-menu li{
+.header__nav-menu--style ul{
+    display: flex;
+    justify-content: space-between;
+    width: 600px
+}
+.header__nav-menu--style li{
     display: inline;
     font-family: "Raleway";
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
     margin: 0 20px;
     cursor: pointer;
     padding-top: 8px;
@@ -45,16 +62,17 @@
 }
 .section__title{
     font-weight: 900;
-    font-size: 50px;
+    font-size: 60px;
     color: #262626;
+    margin-bottom: 30px;
 }
 .section__text{
     font-weight: 300;
-    font-size: 15px;
+    font-size: 16px;
     color: #7a7a7b;
     width: 360px;
     display: block;
-    line-height: 20px;
+    line-height: 26px;
 }
 .section__button--style{
     display: block;
@@ -71,11 +89,18 @@
 .section__button{
     margin-top: 35px;
 }
+.section__img-scroll{
+    position: fixed;
+    left: 50%;
+    cursor: pointer;
+    bottom: 7%;
+}
 .footer{
     background-color: #00b2b2;
     font-family: "Raleway";
     color: white;
     padding-top: 20px;
+    width: 100%
 }
 .footer__title{
     font-weight: 700;
@@ -86,11 +111,6 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 28px;
-}
-.section__img-scroll{
-    position: fixed;
-    left: 50%;
-    cursor: pointer;
 }
 .footer__info{
     width: 450px;
