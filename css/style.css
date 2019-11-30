@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+li a{
+    text-decoration: none;
+    color: black;
+    padding-top: 3px;
+}
 .header{
     background-image: url("../img/img.png");
     min-height: 1000px;
@@ -47,9 +52,9 @@
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
-    padding-top: 8px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 3px;
 }
 .section{
     font-family: "Raleway";
@@ -121,7 +126,7 @@
     height: 555px;
     margin-top: 80px;
 }
-li:hover{
+li a:hover{
     border-top: 3px solid #ff6033;
     transition: 0.2s linear;
 }
